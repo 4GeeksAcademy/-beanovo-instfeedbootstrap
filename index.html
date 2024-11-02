@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand"><i class="fa-brands fa-instagram me-2"></i>Instagram</span>
+      <form class="d-flex" role="search">
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          style="background-color: darkgreen;">
+          Create a new post
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Caption
+                <div class="card">
+                  <div class="card-body">
+                    ...
+                  </div>
+
+
+                </div>
+                <div class="body-button">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                    style="color: black; background-color: white; margin-top: 5px;"><i class="fa-solid fa-camera"></i></button>
+                  <button type="button" class="btn btn-primary" style="color: black; background-color: white; border-color: grey; margin-top: 5px;"><i
+                      class="fa-solid fa-location-dot"></i></button>
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" style="background-color: darkgreen;">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false"><i class="fa-solid fa-gear"></i>
+          </button>
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-start">
+            <li><button class="dropdown-item" type="button">Action</button></li>
+            <li><button class="dropdown-item" type="button">Another action</button></li>
+            <li><button class="dropdown-item" type="button">Privacy and data</button></li>
+            <div class="dropdown-divider"></div>
+            <li><button class="dropdown-item" href="#" style="color:red">Log out</button></li>
+          </ul>
+
+        </div>
+      </form>
+    </div>
+  </nav>
+
+
+  <!-- botones cambio imagen página -->
+  <ul class="nav nav-tabs" id="myTab" role="tablist" style="justify-content: center; margin-top: 5px;">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#mosaico" type="button"
+        role="tab" aria-controls="mosaico" aria-selected="true"><i class="fas fa-th"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab-pane" data-bs-toggle="tab" data-bs-target="#columna" type="button"
+        role="tab" aria-controls="columna" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+    </li>
+  </ul>
+
+  <!-- mosaico -->
+
+  <!-- primera linea -->
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="mosaico" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+      <div class="container-fluid overflow-hidden my-3" id="home-tab">
+
+        <div class="row gx-1">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-white p-1">
+            <img
+              src="https://images.unsplash.com/photo-1730169474554-34365565ba4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM3fEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D"
+              class="image-thumbnail w-100" alt="" height="auto" style="object-fit: cover; width: 400px; height:400px">
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 text-white p-1">
+            <img
+              src="https://images.pexels.com/photos/14822510/pexels-photo-14822510.jpeg?auto=compress&cs=tinysrgb&w=600"
+              class="image-thumbnail w-100" alt="" height="auto" style="object-fit: cover; width: 400px; height:400px">
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 text-white p-1">
+            <img
+              src="https://images.pexels.com/photos/6935006/pexels-photo-6935006.jpeg?auto=compress&cs=tinysrgb&w=600"
+              class="image-thumbnail w-100" alt="" height="auto" style="object-fit: cover; width: 400px; height:400px">
+          </div>
+
+        </div>
+        <!-- segunda linea -->
+        <div class="row gx-1">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-white p-1">
+            <img
+              src="https://images.pexels.com/photos/9240114/pexels-photo-9240114.jpeg?auto=compress&cs=tinysrgb&w=600"
+              class="image-thumbnail w-100" alt="" height="auto" style="object-fit: cover; width: 400px; height:400px">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-white p-1">
+            <img
+              src="https://images.unsplash.com/photo-1730215137787-2103e9143042?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDUxfEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D"
+              class="image-thumbnail w-100" alt="" height="auto" style="object-fit: cover; width: 400px; height:400px">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-white p-1">
+            <img
+              src="https://media.istockphoto.com/id/1176602671/es/foto/ca%C3%ADda-de-hojas-de-oto%C3%B1o-antes-de-la-puesta-del-sol.jpg?s=2048x2048&w=is&k=20&c=2S6mJ5ZjrWHTrp6EvyMHP8HHm5vsH29B8JRG1MzjrI8="
+              class="image-thumbnail w-100" alt="" height="auto" style="object-fit: cover; width: 400px; height:400px">
+          </div>
+        </div>
+        <!-- tercera linea -->
+        <div class="row gx-1">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-white p-1">
+            <img
+              src="https://images.pexels.com/photos/3185323/pexels-photo-3185323.jpeg?auto=compress&cs=tinysrgb&w=600"
+              class="image-thumbnail w-100" alt="" height="auto" style="object-fit: cover; width: 400px; height:400px">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-white p-1">
+            <img
+              src="https://images.pexels.com/photos/1114896/pexels-photo-1114896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="image-thumbnail w-100" alt="" height="auto" style="object-fit: cover; width: 400px; height:400px">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-white p-1">
+            <img
+              src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-halloween-cat-1036x780.jpg"
+              class="image-thumbnail w-100" alt="" height="auto" style="object-fit: cover; width: 400px; height:400px">
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="tab-pane fade" id="columna" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+      <!-- columnas -->
+      
+      <!-- primera -->
+      <div class="card border-light-1 mb-3 mx-auto mt-3" style="max-width: 35rem;">
+        <div class="card-header bg-transparent border-success">
+          <h4>Hello</h4>
+          <span class="position-absolute top-0 end-0 pt-3 me-3">02-11-2024</span></div>
+        <div class="card-body p-0">
+          <img src="https://images.unsplash.com/photo-1730169474554-34365565ba4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM3fEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D"
+            class="w-100" alt="">
+        </div>
+        <div class="card-footer bg-transparent border-success">
+          <span class="fw-bolder">204 Likes</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <!-- segunda -->
+      <div class="card border-light-1 mb-3 mx-auto mt-3" style="max-width: 35rem;">
+        <div class="card-header bg-transparent border-success">
+          <h4>Hello</h4>
+          <span class="position-absolute top-0 end-0 pt-3 me-3">02-11-2024</span></div>
+        <div class="card-body p-0">
+          <img src="https://images.pexels.com/photos/14822510/pexels-photo-14822510.jpeg?auto=compress&cs=tinysrgb&w=600"
+            class="w-100" alt="">
+        </div>
+        <div class="card-footer bg-transparent border-success">
+          <span class="fw-bolder">204 Likes</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <!-- tercera -->
+      <div class="card border-light-1 mb-3 mx-auto mt-3" style="max-width: 35rem;">
+        <div class="card-header bg-transparent border-success">
+          <h4>Hello</h4>
+          <span class="position-absolute top-0 end-0 pt-3 me-3">02-11-2024</span></div>
+        <div class="card-body p-0">
+          <img src="https://images.pexels.com/photos/6935006/pexels-photo-6935006.jpeg?auto=compress&cs=tinysrgb&w=600"
+            class="w-100" alt="">
+        </div>
+        <div class="card-footer bg-transparent border-success">
+          <span class="fw-bolder">204 Likes</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+      <!-- cuarta -->
+      <div class="card border-light-1 mb-3 mx-auto mt-3" style="max-width: 35rem;">
+        <div class="card-header bg-transparent border-success">
+          <h4>Hello</h4>
+          <span class="position-absolute top-0 end-0 pt-3 me-3">02-11-2024</span></div>
+        <div class="card-body p-0">
+
+          <img src="https://images.pexels.com/photos/9240114/pexels-photo-9240114.jpeg?auto=compress&cs=tinysrgb&w=600"
+            class="w-100" alt="">
+        </div>
+        <div class="card-footer bg-transparent border-success">
+          <span class="fw-bolder">204 Likes</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+      </div>
+      <!-- quinta-->
+      <div class="card border-light-1 mb-3 mx-auto mt-3" style="max-width: 35rem;">
+        <div class="card-header bg-transparent border-success">
+          <h4>Hello</h4>
+          <span class="position-absolute top-0 end-0 pt-3 me-3">02-11-2024</span>
+        </div>
+        <div class="card-body p-0">
+          <img src="https://images.unsplash.com/photo-1730215137787-2103e9143042?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDUxfEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D"
+            class="w-100" alt="">
+        </div>
+        <div class="card-footer bg-transparent border-success">
+          <span class="fw-bolder">204 Likes</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <!-- sexta -->
+      <div class="card border-light-1 mb-3 mx-auto mt-3" style="max-width: 35rem;">
+        <div class="card-header bg-transparent border-success">
+          <h4>Hello</h4>
+          <span class="position-absolute top-0 end-0 pt-3 me-3">02-11-2024</span>
+        </div>
+        <div class="card-body p-0">
+          <img src="https://media.istockphoto.com/id/1176602671/es/foto/ca%C3%ADda-de-hojas-de-oto%C3%B1o-antes-de-la-puesta-del-sol.jpg?s=2048x2048&w=is&k=20&c=2S6mJ5ZjrWHTrp6EvyMHP8HHm5vsH29B8JRG1MzjrI8="
+            class="w-100" alt="">
+        </div>
+        <div class="card-footer bg-transparent border-success">
+          <span class="fw-bolder">204 Likes</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+      <!-- septima -->
+      <div class="card border-light-1 mb-3 mx-auto mt-3" style="max-width: 35rem;">
+        <div class="card-header bg-transparent border-success">
+          <h4>Hello</h4>
+          <span class="position-absolute top-0 end-0 pt-3 me-3">02-11-2024</span>
+        </div>
+        <div class="card-body p-0">
+          <img src="https://images.pexels.com/photos/3185323/pexels-photo-3185323.jpeg?auto=compress&cs=tinysrgb&w=600"
+            class="w-100" alt="">
+        </div>
+        <div class="card-footer bg-transparent border-success">
+          <span class="fw-bolder">204 Likes</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+      <!-- octava -->
+      <div class="card border-light-1 mb-3 mx-auto mt-3" style="max-width: 35rem;">
+        <div class="card-header bg-transparent border-success">
+          <h4>Hello</h4>
+          <span class="position-absolute top-0 end-0 pt-3 me-3">02-11-2024</span>
+        </div>
+        <div class="card-body p-0">
+          <img src="https://images.pexels.com/photos/1114896/pexels-photo-1114896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="w-100" alt="">
+        </div>
+        <div class="card-footer bg-transparent border-success">
+          <span class="fw-bolder">204 Likes</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+      <!-- novena -->
+      <div class="card border-light-1 mb-3 mx-auto mt-3" style="max-width: 35rem;">
+        <div class="card-header bg-transparent border-success">
+          <h4>Hello</h4>
+          <span class="position-absolute top-0 end-0 pt-3 me-3">02-11-2024</span>
+        </div>
+        <div class="card-body p-0">
+          <img src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-halloween-cat-1036x780.jpg"
+            class="w-100" alt="">
+        </div>
+        <div class="card-footer bg-transparent border-success">
+          <span class="fw-bolder">204 Likes</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
